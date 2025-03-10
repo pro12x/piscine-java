@@ -6,9 +6,6 @@
 */**/.vscode
 */out
 */**/out
-*.class
-*/*.class
-*/**/*.class
 ExerciseRunner
 *.iml
 */*.iml
