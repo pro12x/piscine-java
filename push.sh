@@ -16,7 +16,6 @@ git status
 # Commit the files
 # git commit -m "Initial commit"
 git commit -m "$message pushed at $(date)"
-sleep 2
 
 # Create a new branch
 # git branch -M main
