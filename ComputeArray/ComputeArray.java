@@ -1,5 +1,9 @@
 public class ComputeArray {
     public static int[] computeArray(int[] array) {
+        if (array == null) {
+            return null;
+        }
+
         int[] result = new int[array.length];
 
         int i = 0;

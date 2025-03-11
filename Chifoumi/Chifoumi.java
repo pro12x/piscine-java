@@ -1,9 +1,12 @@
+// package Chifoumi;
+
 public class Chifoumi {
     public static ChifoumiAction getActionBeatenBy(ChifoumiAction chifoumiAction) {
         return switch (chifoumiAction) {
-            case ChifoumiAction.ROCK -> ChifoumiAction.SCISSORS;
-            case ChifoumiAction.PAPER -> ChifoumiAction.ROCK;
-            case ChifoumiAction.SCISSORS -> ChifoumiAction.PAPER;
+            case ROCK -> ChifoumiAction.SCISSOR;
+            case PAPER -> ChifoumiAction.ROCK;
+            case SCISSOR -> ChifoumiAction.PAPER;
+            default -> throw new IllegalArgumentException("Unexpected value: " + chifoumiAction);
         };
     }
 }

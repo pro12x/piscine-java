@@ -14,6 +14,6 @@ public class DoOp {
                 default -> "Error";
             };
         }
-        return "it depend on the input";
+        return "Error";
     }
 }

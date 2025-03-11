@@ -1,3 +1,5 @@
+// package Chifoumi;
+
 public enum ChifoumiAction {
-    ROCK, PAPER, SCISSORS
+    ROCK, PAPER, SCISSOR
 }
