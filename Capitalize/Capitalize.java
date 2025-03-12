@@ -1,7 +1,5 @@
 import java.io.*;
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,8 +25,14 @@ public class Capitalize {
     }
 
     public static void capitalize(String[] args) throws IOException {
+        if (args.length != 2) {
+            return;
+        }
+
         String inputFile = args[0];
         String outputFile = args[1];
+
+        System.out.println();
 
         try (
                 BufferedReader reader = new BufferedReader(new FileReader(inputFile));
@@ -38,7 +42,6 @@ public class Capitalize {
             while ((line = reader.readLine()) != null) {
                 String[] tab = Capitalize.splitTab(line);
                 writer.write(String.join(" ", tab));
-                writer.newLine();
             }
         }
     }
