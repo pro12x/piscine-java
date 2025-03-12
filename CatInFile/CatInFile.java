@@ -7,6 +7,7 @@ public class CatInFile {
         if (args.length == 0) {
             return;
         }
+        
         String filename = args[0];
         try (OutputStream out = new FileOutputStream(filename)) {
             byte[] buffer = new byte[1024];
