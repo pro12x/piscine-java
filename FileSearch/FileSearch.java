@@ -9,7 +9,7 @@ public class FileSearch {
         }
 
         String relativePath = searchDirectory(documentsDir, fileName);
-        
+
         return relativePath != null ? "documents/" + relativePath : null;
     }
 
