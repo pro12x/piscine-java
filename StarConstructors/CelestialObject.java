@@ -5,16 +5,16 @@ public class CelestialObject {
     public String name;
 
     public CelestialObject() {
-        x = 0;
-        y = 0;
-        z = 0;
-        name = "Soleil";
+        this.x = 0;
+        this.y = 0;
+        this.z = 0;
+        this.name = "Soleil";
     }
 
-    public CelestialObject(double itemX, double itemY, double itemZ, String itemName) {
-        x = itemX;
-        y = itemY;
-        z = itemZ;
-        name = itemName;
+    public CelestialObject(String name, double x, double y, double z) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        this.name = name;
     }
 }
