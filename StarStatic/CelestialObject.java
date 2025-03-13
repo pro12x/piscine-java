@@ -62,10 +62,4 @@ public class CelestialObject {
     public static double getDistanceBetweenInKm(CelestialObject c1, CelestialObject c2) {
         return getDistanceBetween(c1, c2) * KM_IN_ONE_AU;
     }
-
-    public static void main(String[] args) {
-        CelestialObject earth = new CelestialObject("Earth", 1, 0, 0);
-        System.out.println(earth.getName() + " is at " + earth.getX() + " AU from the Sun.");
-        System.out.println(KM_IN_ONE_AU);
-    }
 }
