@@ -11,3 +11,7 @@ ExerciseRunner
 */*.iml
 */**/*.iml
 piscine-*
+*.class
+*/**/*.class
+*/**/*.class
+*/*.class
